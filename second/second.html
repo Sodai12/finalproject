@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="cy"><a href="">Paradox</a></div>
+        <div class="home">
+           <a href="../index.html"> <span class="like">Home</span></a>
+            <a href="#"><span class="like">About</span></a>
+        </div>
+        <div class="get">
+            <a href="">Get started free</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="conot ">
+            <div class="conot-pic">
+                <div class="aq">
+                    <div class="pp-pic sd">
+                        <img src="./imge/Illustration.png" alt="">
+                    </div>
+                    <div class="pp-pic">
+                        <img src="./imge/pana.png" alt="">
+                    </div>
+                    <div class="pp-pic">
+                        <img src="./imge/Frame 35.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="lis">
+                <div class="kt show"></div>
+                <div class="kt"></div>
+                <div class="kt"></div>
+            </div>
+            <script>
+                let kt = document.querySelectorAll('.kt')
+                let pic = document.querySelectorAll('.pp-pic')
+                let timer;
+                let currentIndex = 0; // Initialize the index
+
+                timer = setInterval(() => {
+                    // Hide all elements
+                    kt.forEach(item => item.classList.remove('show'));
+                    pic.forEach(item => item.classList.remove('sd'));
+
+                    // Show the current elements
+                    kt[currentIndex].classList.add('show');
+                    pic[currentIndex].classList.add('sd');
+
+                    // Increment the index for the next iteration
+                    currentIndex = (currentIndex + 1) % kt.length;
+                }, 2000);
+
+
+
+
+            </script>
+             <div class="text">
+                <h3>Why Data Privacy is Important?</h3>
+                <p>Where to grow your business as a photographer: site or social media?</p>
+            </div>
+        </div>
+       <div class="sec mg">
+           <div class="tq">
+                <h2>About Data Privacy</h2>
+                <p>Data privacy is crucial in our digital age. It involves the proper handling, processing, storage,
+                    and disposal of personal information with respect for individual rights. As we increasingly live
+                    our lives online, understanding and protecting our data privacy becomes paramount.</p>
+           </div>
+            <div class="ro">
+                <div class="ro-pic">
+                    <img src="./imge/Frame 35.png" alt="">
+                </div>
+                <div class="ro-text">
+                    <h2>Understanding Your Digital Footprint</h2>
+                    <p>Your digital footprint is a trail of data you leave while using the Internet. It includes the websites
+                        you visit, the social media content you post, and the information you submit online. Being aware
+                        of your digital footprint can help you maintain control over your personal information.
+                        </p>
+                </div>
+            </div>
+          
+            <div class="ro">
+                <div class="ro-pic">
+                    <img src="./imge/pana.png" alt="">
+                </div>
+                <div class="ro-text">
+                    <h2>Tips for Protecting Your Data Privacy</h2>
+                    <p>Here are some practical steps you can take to protect your data privacy: Use strong, unique
+                        passwords for different accounts; be cautious about the personal information you share online;
+                        regularly review privacy settings on social media; and be aware of phishing scams and how to
+                        avoid them. Privacy policies can be complex, but they are crucial to understand. They inform
+                        you about how companies collect, use, and share your data. Taking time to read and
+                        understand these policies can make you more informed about your rights and how to exercise
+                        them.
+                        </p>
+                </div>
+            </div>
+            <div class="ro clo">
+                <div class="ro-pic">
+                    <img src="./imge/Goal achievement with golden trophy.png" alt="">
+                </div>
+                <div class="ro-text">
+                    <h2>Goal for this satirical website</h2>
+                    <p>Raise Awareness and encourage people to start protect their privacy in this digital time period</p>
+                </div>
+            </div>
+            <div class="foot">
+                <h2>&copy; 2023 PrivacyParadox</h2>
+            </div>
+       </div>
+       
+    </div>
+   
+</body>
+
+</html>
